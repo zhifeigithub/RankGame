@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 13
-  productGUID: 799789e83e42f7549b10aa70c269f40b
+  productGUID: cfed818c11ecf274f888950962cb6bec
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 4
@@ -603,8 +603,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 7f39230f-9065-452c-a5ac-3814027e36a0
-  projectName: RankGame (1)
+  cloudProjectId: 0199bcef-d013-43b7-a9b1-b7802d563262
+  projectName: RankGame (2)
   organizationId: szofiel
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
