@@ -18,13 +18,8 @@ public class RankItemView : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Init();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        var datas = new RankData();
+        Refresh(datas.RankItemDatas[0]);
     }
 
     private void Init()
@@ -39,6 +34,28 @@ public class RankItemView : MonoBehaviour
         _textScore = transform.Find("TextScore").GetComponent<Text>();
     }
 
-    public void SetData
+    private void SetData(RankItemData data)
+    {
+        
+        _imageBg.sprite = Resources.Load<Sprite>(data.ImageBg);
+        _tfUp.gameObject.SetActive(data.IsUp);
+        _tfDown.gameObject.SetActive(data.IsDown);
+        _textNo.text = data.TextNo;
+        _textName.text = data.TextName;
+        _textRankInfo.text = data.TextRankInfo;
+        _buttonInfo.onClick.AddListener(TestClick);
+        _textScore.text = data.TextScore;
+        
+    }
 
+    public void Refresh(RankItemData data)
+    {
+        Init();
+        SetData(data);
+    }
+
+    public void TestClick()
+    {
+        Debug.Log("!!!!!!!!!!!!!!!");
+    }
 }

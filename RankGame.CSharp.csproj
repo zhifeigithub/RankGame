@@ -219,6 +219,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\RankData.cs" />
+    <Compile Include="Assets\Scripts\RankItemData.cs" />
     <Compile Include="Assets\Scripts\RankItemView.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
